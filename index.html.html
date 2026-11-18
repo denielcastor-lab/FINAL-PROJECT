@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DC LUXURIOUS | Fine Jewelry in Botolan, Zambales</title>
+  <meta name="description" content="DC LUXURIOUS curates timeless, high-quality diamond rings and gold necklaces. Visit us in Botolan, Zambales or call 09668696296." />
+  <meta property="og:title" content="DC LUXURIOUS | Fine Jewelry in Botolan, Zambales" />
+  <meta property="og:description" content="Timeless, high-quality jewelry designed to add sophistication and luxury to your everyday style." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Lora:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="navbar" id="top">
+    <div class="container nav-inner">
+      <a href="#home" class="logo" aria-label="DC LUXURIOUS home">
+        <span class="logo-mark">DC</span>
+        <span class="logo-text">LUXURIOUS</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#products">SERVICES</a>
+        <a href="#contact">REVIEWS</a>
+        <form class="search" id="searchForm" role="search">
+          <input type="search" id="searchInput" placeholder="Search..." aria-label="Search products" />
+          <button type="submit" aria-label="Search">
+            <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2.5"/><line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </button>
+        </form>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO / WELCOME ===== -->
+    <section class="section hero" id="home">
+      <div class="container two-col">
+        <div class="text-block reveal">
+          <p>Welcome to <strong>DC LUXURIOUS</strong>, where elegance meets craftsmanship. We curate timeless, high-quality jewelry designed to add a touch of sophistication and luxury to your everyday style. Discover pieces crafted to shine as brightly as you do.</p>
+        </div>
+        <div class="image-frame reveal">
+          <img src="images/boutique_interior_bright.jpg" alt="Bright DC LUXURIOUS jewelry boutique with glass display cases" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section about" id="about">
+      <div class="container two-col reverse">
+        <div class="image-frame reveal">
+          <img src="images/boutique_interior_emerald.jpg" alt="Elegant emerald jewelry showroom with crystal chandeliers" />
+        </div>
+        <div class="text-block reveal">
+          <p>At <strong>DC LUXURIOUS</strong>, we believe that true beauty lives in the finer details. Born from a passion for craftsmanship and elegance.</p>
+          <p>Our business is dedicated to delivering high-quality, timeless jewelry that adds a touch of pure luxury to your everyday life.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRODUCTS ===== -->
+    <section class="section products" id="products">
+      <div class="container">
+        <div class="products-head">
+          <h2 class="pill-title">List of Products</h2>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+          <!-- Product cards are created by script.js -->
+        </div>
+        <p class="no-results" id="noResults" hidden>No products found. Try another search.</p>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section contact" id="contact">
+      <div class="container two-col contact-grid">
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="cName" class="sr-only">Name</label>
+              <input type="text" id="cName" name="name" placeholder="Name" required />
+            </div>
+            <div class="field">
+              <label for="cEmail" class="sr-only">Email</label>
+              <input type="email" id="cEmail" name="email" placeholder="Email" required />
+            </div>
+          </div>
+          <div class="field">
+            <label for="cMessage" class="sr-only">Message</label>
+            <textarea id="cMessage" name="message" rows="7" placeholder="Message here..." required></textarea>
+          </div>
+          <p class="form-error" id="contactError" role="alert"></p>
+          <button type="submit" class="btn btn-gold">Send Message</button>
+        </form>
+
+        <div class="contact-info reveal">
+          <h3>Contact Us:</h3>
+          <a href="tel:09668696296" class="phone">09668696296</a>
+
+          <h3 class="social-title">Social Links:</h3>
+          <div class="socials">
+            <a href="#" class="social facebook" aria-label="Facebook" data-social="facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#1877F2"/><path d="M15.1 12.9l.4-2.8h-2.7V8.3c0-.8.4-1.5 1.6-1.5h1.2V4.4s-1.1-.2-2.2-.2c-2.2 0-3.7 1.4-3.7 3.8v2.1H7.3v2.8h2.4V20h3.1v-7.1h2.3z" fill="#fff"/></svg>
+            </a>
+            <a href="#" class="social tiktok" aria-label="TikTok" data-social="tiktok">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#111"/><path d="M16.6 7.6a3.3 3.3 0 0 1-2-2.1h-2.2v9.1a1.9 1.9 0 1 1-1.9-1.9c.2 0 .4 0 .6.1v-2.3a4.2 4.2 0 1 0 3.6 4.1V9.9a5.4 5.4 0 0 0 3.1 1V8.7a3.2 3.2 0 0 1-1.2-1.1z" fill="#25F4EE" transform="translate(-.6 -.4)"/><path d="M16.6 7.6a3.3 3.3 0 0 1-2-2.1h-2.2v9.1a1.9 1.9 0 1 1-1.9-1.9c.2 0 .4 0 .6.1v-2.3a4.2 4.2 0 1 0 3.6 4.1V9.9a5.4 5.4 0 0 0 3.1 1V8.7a3.2 3.2 0 0 1-1.2-1.1z" fill="#FE2C55" transform="translate(.6 .4)"/><path d="M16.6 7.6a3.3 3.3 0 0 1-2-2.1h-2.2v9.1a1.9 1.9 0 1 1-1.9-1.9c.2 0 .4 0 .6.1v-2.3a4.2 4.2 0 1 0 3.6 4.1V9.9a5.4 5.4 0 0 0 3.1 1V8.7a3.2 3.2 0 0 1-1.2-1.1z" fill="#fff"/></svg>
+            </a>
+            <a href="#" class="social instagram" aria-label="Instagram" data-social="instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><defs><radialGradient id="ig" cx="30%" cy="107%" r="150%"><stop offset="0" stop-color="#fdf497"/><stop offset=".1" stop-color="#fdf497"/><stop offset=".5" stop-color="#fd5949"/><stop offset=".7" stop-color="#d6249f"/><stop offset="1" stop-color="#285AEB"/></radialGradient></defs><rect width="24" height="24" rx="6" fill="url(#ig)"/><rect x="5.5" y="5.5" width="13" height="13" rx="4" fill="none" stroke="#fff" stroke-width="1.8"/><circle cx="12" cy="12" r="3.2" fill="none" stroke="#fff" stroke-width="1.8"/><circle cx="16.1" cy="7.9" r="1" fill="#fff"/></svg>
+            </a>
+            <a href="#" class="social gmail" aria-label="Gmail" data-social="gmail">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5 12 13l9-6.5V18a1.5 1.5 0 0 1-1.5 1.5H17V10.6L12 14.3 7 10.6v8.9H4.5A1.5 1.5 0 0 1 3 18z" fill="#fff"/><path d="M3 6.5V18a1.5 1.5 0 0 0 1.5 1.5H7v-8.9z" fill="#4285F4"/><path d="M17 10.6v8.9h2.5A1.5 1.5 0 0 0 21 18V6.5z" fill="#34A853"/><path d="M17 6.2v4.4l4-4.1A1.6 1.6 0 0 0 18.6 5z" fill="#FBBC04"/><path d="M7 10.6V6.2l5 3.8 5-3.8v4.4l-5 3.7z" fill="#EA4335"/><path d="M3 6.5a1.6 1.6 0 0 1 2.4-1.5L7 6.2v4.4z" fill="#C5221F"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <span class="logo-mark small">DC</span>
+        <strong class="footer-brand">DC LUXURIOUS</strong>
+      </div>
+      <p>Owner &amp; CEO: <strong>Deniel Castor</strong></p>
+      <p>Botolan, Zambales</p>
+      <p><a href="tel:09668696296">09668696296</a></p>
+      <p class="copy">&copy; <span id="year"></span> DC LUXURIOUS. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===== CHECKOUT MODAL ===== -->
+  <div class="modal" id="checkoutModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+      <button class="modal-close" data-close aria-label="Close">&times;</button>
+
+      <!-- Step 1: order form -->
+      <div class="checkout-step" id="stepForm">
+        <h2 id="checkoutTitle">Checkout</h2>
+        <div class="order-item">
+          <img id="coImage" src="" alt="" />
+          <div>
+            <h3 id="coName"></h3>
+            <p id="coPrice" class="gold-text"></p>
+            <div class="qty">
+              <button type="button" id="qtyMinus" aria-label="Decrease quantity">&minus;</button>
+              <span id="qtyValue">1</span>
+              <button type="button" id="qtyPlus" aria-label="Increase quantity">+</button>
+            </div>
+          </div>
+        </div>
+
+        <form id="checkoutForm" novalidate>
+          <div class="field">
+            <label for="oName">Full Name</label>
+            <input type="text" id="oName" required />
+          </div>
+          <div class="field">
+            <label for="oPhone">Contact Number</label>
+            <input type="tel" id="oPhone" placeholder="09XXXXXXXXX" required />
+          </div>
+          <div class="field">
+            <label for="oAddress">Delivery Address</label>
+            <input type="text" id="oAddress" required />
+          </div>
+          <div class="field">
+            <label for="oNote">Note (optional)</label>
+            <textarea id="oNote" rows="2" placeholder="Ring size, engraving, etc."></textarea>
+          </div>
+          <p class="form-error" id="checkoutError" role="alert"></p>
+          <div class="total-row">
+            <span>Total</span>
+            <strong id="coTotal" class="gold-text"></strong>
+          </div>
+          <button type="submit" class="btn btn-gold btn-block">Place Order</button>
+        </form>
+      </div>
+
+      <!-- Step 2: confirmation -->
+      <div class="checkout-step" id="stepDone" hidden>
+        <div class="check-icon" aria-hidden="true">&#10003;</div>
+        <h2>Order Placed!</h2>
+        <p>Thank you, <strong id="doneName"></strong>. Your order number is <strong id="doneNumber" class="gold-text"></strong>.</p>
+        <div class="summary" id="doneSummary"></div>
+        <p class="small-note">Send your order to DC LUXURIOUS so we can confirm it with you.</p>
+        <a href="#" id="smsOrder" class="btn btn-gold btn-block">Text My Order to 09668696296</a>
+        <a href="tel:09668696296" class="btn btn-outline btn-block">Call 09668696296</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== TOAST ===== -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
